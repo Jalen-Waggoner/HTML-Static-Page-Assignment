@@ -7,7 +7,7 @@
 body {
     background-color: #74b9ff;
     font-family: Arial, Helvetica, sans-serif;
-    height: 50vw;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -21,12 +21,14 @@ body {
     gap: 1em;
     box-shadow: -10px 5px 30px -5px;
     border-bottom: solid 2px black;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
 }
 
 .nav-link{
     text-decoration: none;
     color: #dfe6e9;
-    font-size: 1.5vw;
+    font-size: 1em;
     padding-right: 1em;
 }
 
@@ -36,34 +38,38 @@ body {
 
 .main-wrapper{
     display: flex;
-    width: 20vw;
-    height: 25vw;
+    width: 80vw;
+    height: 60vh;
     align-items: center;
     flex-direction: column;
-    margin-left: 40vw;
-    margin-top: 7vw;
+    margin-left: 10vw;
+    margin-top: 3vh;
     gap: 2em;
     background: linear-gradient(#dfe6e9 40%, #a6b0b3);
     padding-top: 5em;
+    border-radius: 1em;
     box-shadow: 5px 7px 15px 0px;
+    padding-top: 2em;
 }
 
 .form-header {
     color: #2d3436;
+    font-size: 2em;
 }
 
 .form-container {
     display: flex;
-    margin-top: 1em;
-    width: 15vw;
-    height: 20vw;
+    margin-top: .5em;
+    width: 70vw;
+    height: 45vh;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: .25em;
 }
 
 .form-input {
-    width: 12vw;
+    width: 60vw;
     height: 2.2em;
     font-size: 1.1em;
     text-align: center;
@@ -85,49 +91,53 @@ body {
 
 .socials-container{
     display: flex;
-    width: 20vw;
-    height: 5vw;
+    width: 80vw;
+    height: 7vh;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 1.5em;
+    justify-content: space-around;
+    margin-bottom: 1em;
 }
 
 .socials{
     display: flex;
-    flex-direction: column;
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
 }
 
-/*
-nav {
-    display: flex;
-    background-color: antiquewhite;
-    position: fixed;
+@media only screen and (min-width: 811px) {
+    
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #74b9ff;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
     width: 100vw;
-    height: 4em;
-    box-shadow: 0 10px 40px -10px;
-    justify-content: right;
+}
+
+.nav{
+    display: flex;
+    background-color: #636e72;
+    width: 100vw;
+    height: 3em;
+    justify-content: flex-end;
     align-items: center;
-}
-
-.menu{
-    list-style-type: none;
-    display: flex;
-    gap: 2em;
-    padding-right: 2em;
-}
-
-.menu-options{
-    display: flex;
-    height: 2em;
+    gap: .5em;
+    box-shadow: -10px 5px 30px -5px;
+    border-bottom: solid 2px black;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
 }
 
 .nav-link{
     text-decoration: none;
-    font-size: 1.5vw;
-    color: rgb(104, 104, 104);
+    color: #dfe6e9;
+    font-size: 1.5em;
+    padding-right: 1em;
 }
 
 .nav-link:hover{
@@ -136,5 +146,64 @@ nav {
 
 .main-wrapper{
     display: flex;
-    position: top 10px;
-}*/
+    width: 25vw;
+    height: 70vh;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 37.5vw;
+    margin-top: 7vh;
+    gap: 2em;
+    background: linear-gradient(#dfe6e9 40%, #a6b0b3);
+    padding-top: 5em;
+    border-radius: 1em;
+    box-shadow: 5px 7px 15px 0px;
+    padding-top: 3em;
+}
+
+.form-header {
+    color: #2d3436;
+    font-size: 2.5em;
+}
+
+.form-container {
+    display: flex;
+    width: 20vw;
+    height: 45vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-input {
+    width: 20vw;
+    height: 4vh;
+    font-size: 1.1em;
+    text-align: center;
+    color: #2d3436;
+}
+
+.form-submit {
+    height: 4vh;
+    width: 10vw;
+    background-color: #636e72;
+    color: #dfe6e9;
+    font-size: 1.25em;
+}
+
+.form-submit:hover {
+    color: #dfe6e9;
+    background-color: #565a5f;
+}
+
+.socials-container{
+    display: flex;
+    width: 25vw;
+    height: 10vh;
+    align-items: center;
+}
+
+.socials {
+    max-height: 100%;
+    width: auto;
+}
+}
